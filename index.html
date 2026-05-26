@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Thakurgaon Polytechnic Institute | CST Department</title>
+  <!-- Bootstrap 5 CSS + Icons + Google Fonts (all CDN, no extra files) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+<!-- ======================= NAVBAR / MENU ======================= -->
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Thakurgaon Polytechnic<span class="text-warning"> Institute</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+        <li class="nav-item"><a class="nav-link active" href="#" data-page="home">🏠 Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-page="teacher">👨‍🏫 Teacher</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-page="student">📚 Student</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-page="classtest">📄 Class-Test-Result</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-page="midterm">📑 Midterm-Result</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-page="semester">🎓 Semester-Result</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-page="notice">📢 Notice</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================= MAIN CONTENT ======================= -->
+<div class="container page-content mt-4 mb-5">
+  <!-- HOME PAGE (default visible) -->
+  <div id="homePage" class="page-section">
+    <div class="hero-section">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1 class="display-5 fw-bold">Welcome to <span class="text-warning">CST Department</span></h1>
+          <p class="lead mt-3">Excellence in Computer Science & Technology | Shaping Future IT Leaders</p>
+          <p class="mt-2">Thakurgaon Polytechnic Institute offers world-class diploma programs with industry-oriented curriculum. Our department focuses on innovation, research, and practical skills.</p>
+          <a href="#" data-page="notice" class="btn btn-custom mt-2 me-2 nav-link-trigger"><i class="fas fa-bullhorn"></i> Latest Notice</a>
+          <a href="#" data-page="midterm" class="btn btn-outline-secondary mt-2 nav-link-trigger"><i class="fas fa-file-pdf"></i> Midterm Results</a>
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fas fa-laptop-code hero-icon"></i>
+          <i class="fas fa-microchip ms-3 hero-icon"></i>
+        </div>
+      </div>
+    </div>
+    <!-- mini calendar / interactive widget just for design -->
+    <div class="row mt-4">
+      <div class="col-md-6 mx-auto">
+        <div class="card card-hover p-3 text-center bg-white">
+          <h5><i class="far fa-calendar-alt text-warning"></i> Academic Calendar</h5>
+          <div id="inlineCalendar" class="mt-2"></div>
+          <p class="text-muted small mt-2">📅 Mid-term: April 2025 | Semester Final: July 2025</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEACHER PAGE -->
+  <div id="teacherPage" class="page-section d-none">
+    <div class="card card-hover p-4 mx-auto" style="max-width: 700px;">
+      <div class="text-center mb-3">
+        <i class="fas fa-chalkboard-user" style="font-size: 4rem; color:#1e5a6f;"></i>
+      </div>
+      <h2 class="text-center fw-bold">👨‍🏫 Teacher Profile</h2>
+      <hr class="my-3">
+      <p><i class="fas fa-user-graduate fa-fw text-warning"></i> <strong>Name:</strong> MD. Sabbir Hosen</p>
+      <p><i class="fas fa-briefcase fa-fw text-warning"></i> <strong>Designation:</strong> jr Instructor (Cst)</p>
+      <p><i class="fas fa-university fa-fw text-warning"></i> <strong>Institute:</strong> Thakurgaon Polytechnic Institute</p>
+      <p><i class="fas fa-graduation-cap fa-fw text-warning"></i> <strong>Qualification:</strong> BSc in (CSe)</p>
+      <p><i class="fas fa-code fa-fw text-warning"></i> <strong>Expertise:</strong> Web Technologies, Data Structures, Programming Fundamentals</p>
+      <div class="alert alert-light mt-3 border-start border-4 border-warning">
+        <i class="fas fa-envelope"></i> Email: sabbir.cst@tpi.edu.bd
+      </div>
+    </div>
+  </div>
+
+  <!-- STUDENT PAGE -->
+  <div id="studentPage" class="page-section d-none">
+    <div class="card card-hover p-4 mx-auto" style="max-width: 700px;">
+      <div class="text-center"><i class="fas fa-users" style="font-size: 3.5rem; color:#1e5a6f;"></i></div>
+      <h2 class="text-center fw-bold mt-2">Student Corner</h2>
+      <hr>
+      <p><i class="fas fa-chart-line text-warning"></i> <strong>Total Enrolled:</strong> 450+ Students (Diploma in CST)</p>
+      <p><i class="fas fa-calendar-alt text-warning"></i> <strong>Academic Sessions:</strong> Evening & Day shift available</p>
+      <p><i class="fas fa-trophy text-warning"></i> <strong>Achievements:</strong> 92% placement record, national project award 2024</p>
+      <p><i class="fas fa-code-branch text-warning"></i> <strong>Clubs:</strong> Programming Club, Robotics Club, IT Business Forum</p>
+      <div class="bg-light p-3 rounded-4 mt-3">
+        <i class="fas fa-graduation-cap"></i> <strong>Upcoming:</strong> Industrial Tour, Hackathon, and Career Fair.
+      </div>
+    </div>
+  </div>
+
+  <!-- CLASS TEST RESULT PAGE (manual anchor links) -->
+  <div id="classtestPage" class="page-section d-none">
+    <h2 class="fw-bold mb-4"><i class="fas fa-file-pdf text-danger me-2"></i> Class Test Results</h2>
+    <p class="text-muted mb-3">Click on any link below to view/download respective class test result PDF (manually linked).</p>
+    <div class="row g-4">
+      <!-- 👇 MANUAL ANCHOR LINKS FOR CLASS TEST RESULTS - REPLACE '#' WITH YOUR DRIVE/PDF LINK -->
+      <div class="col-md-6 col-lg-4">
+        <a href="https://drive.google.com/file/d/1b35f0gEBYpWRTlErsXPdv5yoKnn7Iwbx/view?usp=sharing" class="result-link-card" target="_blank" id="ctLink1">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Data Communication CT-1</h5>
+            <p class="small">CST 5t 2nd Shift | Click to open PDF</p>
+            <span class="badge bg-warning text-dark">📄 Google Drive</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="ctLink1">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Data Communication CT-1</h5>
+            <p class="small">CST 5t 2nd Shift | Click to open PDF</p>
+            <span class="badge bg-warning text-dark">📄 Google Drive</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="ctLink2">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Web Development CT</h5>
+            <p class="small">Class Test 2 | Click to open PDF</p>
+            <span class="badge bg-warning text-dark">📄 Google Drive</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="ctLink3">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Database CT</h5>
+            <p class="small">Class Test 3 | Click to open PDF</p>
+            <span class="badge bg-warning text-dark">📄 Google Drive</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="alert alert-info mt-4">
+      <i class="fas fa-info-circle"></i> <strong>Note:</strong> To add your own PDF links, replace the <code>href="#"</code> inside each anchor tag with your Google Drive shareable link or any PDF URL.
+    </div>
+  </div>
+
+  <!-- MIDTERM RESULT PAGE (manual anchor links) -->
+  <div id="midtermPage" class="page-section d-none">
+    <h2 class="fw-bold mb-4"><i class="fas fa-file-alt text-danger me-2"></i> Midterm Examination Results</h2>
+    <p class="text-muted mb-3">Direct links to midterm result PDFs (manually updated by admin).</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="midLink1">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Data Structure Midterm</h5>
+            <p class="small">Midterm Result | Spring 2025</p>
+            <span class="badge bg-primary">📎 PDF Available</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="midLink2">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Web Technology Mid</h5>
+            <p class="small">Midterm Result | Spring 2025</p>
+            <span class="badge bg-primary">📎 PDF Available</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="midLink3">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Object Oriented Programming Mid</h5>
+            <p class="small">Midterm Result | Spring 2025</p>
+            <span class="badge bg-primary">📎 PDF Available</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="alert alert-secondary mt-4">
+      <i class="fas fa-hand-point-right"></i> <strong>To update:</strong> locate the anchor tags (e.g., id="midLink1") in the HTML and change the <code>href</code> attribute to your actual Google Drive/PDF link.
+    </div>
+  </div>
+
+  <!-- SEMESTER RESULT PAGE (manual anchor links) -->
+  <div id="semesterPage" class="page-section d-none">
+    <h2 class="fw-bold mb-4"><i class="fas fa-award text-danger me-2"></i> Semester Final Results</h2>
+    <p class="text-muted">Official semester-wise results – click to open.</p>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="semLink1">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Semester 1 (CST)</h5>
+            <p class="small">Final Result | June 2025</p>
+            <span class="badge bg-success">📜 Semester Final</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="semLink2">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Semester 2 (DBMS)</h5>
+            <p class="small">Final Result | June 2025</p>
+            <span class="badge bg-success">📜 Semester Final</span>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <a href="#" class="result-link-card" target="_blank" id="semLink3">
+          <div class="card card-hover p-3 text-center h-100">
+            <i class="fas fa-file-pdf fa-3x text-danger"></i>
+            <h5 class="mt-2">Semester 3 (Networking)</h5>
+            <p class="small">Final Result | June 2025</p>
+            <span class="badge bg-success">📜 Semester Final</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="alert alert-warning mt-4">
+      <i class="fas fa-link"></i> <strong>Replace # with your actual PDF link:</strong> Edit the <code>href</code> inside each semester result card. Use your Google Drive shareable links or direct PDF URLs.
+    </div>
+  </div>
+
+  <!-- NOTICE PAGE (manual notices using p / h tags) -->
+  <div id="noticePage" class="page-section d-none">
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+      <h2 class="fw-bold"><i class="fas fa-bullhorn text-warning"></i> Notice Board</h2>
+    </div>
+    <!-- ========== NOTICES SECTION: you can manually edit with <p> and <h> tags ========= -->
+    <div class="notice-list">
+      <div class="notice-item">
+        <h5 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Midterm Exam Schedule Released</h5>
+        <p>Midterm examinations will be held from 7th June to 12th June 2026. All students must bring their ID cards. <br><small class="text-muted"><i class="far fa-clock"></i> Published: 10 April 2025</small></p>
+      </div>
+      <div class="notice-item">
+        <h5 class="fw-bold"><i class="fas fa-user-graduate"></i> Semester Final Registration Extended</h5>
+        <p>Last date for semester final registration with late fee: 30th May 2025. Contact academic section for details.</p>
+        <p class="mb-0 text-secondary">📌 <strong>Important:</strong> No registration after deadline.</p>
+        <small class="text-muted">Issued: 05 April 2025</small>
+      </div>
+      <div class="notice-item">
+        <h5 class="fw-bold"><i class="fas fa-laptop-code"></i> Web Development Workshop</h5>
+        <p>A 2-day hands-on workshop on MERN Stack will be conducted on 20-21 April 2025. Interested students register with class representative.</p>
+        <p><i class="fas fa-map-marker-alt"></i> Venue: CST Lab 3</p>
+        <small class="text-muted">Posted: 01 April 2025</small>
+      </div>
+      <div class="notice-item bg-light">
+        <h5 class="fw-bold"><i class="fas fa-file-pdf text-danger"></i> Class Test Result Notice</h5>
+        <p>All class test result PDFs have been updated under "Class-Test-Result" menu. Students are requested to check.</p>
+        <p><strong>⏰ Reminder:</strong> Midterm result will be published soon.</p>
+        <small>📢 Dated: 28 March 2025</small>
+      </div>
+      <!-- Add as many notice items as you want using <h5> and <p> tags -->
+    </div>
+    <div class="mt-4 p-3 rounded-3 bg-white border">
+      <i class="fas fa-edit text-warning"></i> <strong>Admin note:</strong> You can manually edit the notice section above — add new <code>&lt;div class="notice-item"&gt;</code> with your own headings and paragraphs.
+    </div>
+  </div>
+</div>
+
+<!-- ======================= FOOTER (Teacher info as required) ======================= -->
+<footer class="footer-info mt-5 pt-4 pb-3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h5><i class="fas fa-chalkboard-user me-2"></i> Teacher In-Charge</h5>
+        <div class="footer-teacher mt-2">
+          <p class="mb-1"><strong>👨‍🏫 Name:</strong> MD. Sabbir Hosen</p>
+          <p class="mb-1"><strong>📌 Designation:</strong> jr Instructor (Cst)</p>
+          <p class="mb-1"><strong>🏛️ Institute:</strong> Thakurgaon Polytechnic Institute</p>
+          <p class="mb-0"><strong>🎓 Qualification:</strong> BSc in (CSe)</p>
+        </div>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <i class="fas fa-envelope me-1"></i> cst@tpi.edu.bd<br>
+        <i class="fas fa-phone-alt"></i> +880 1234 567890<br>
+        <small>© 2025 Thakurgaon Polytechnic Institute</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle (required for toggler) + Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // ======================= SIMPLE SPA PAGE ROUTING (only HTML/CSS/JS) =======================
+  const sections = {
+    home: 'homePage',
+    teacher: 'teacherPage',
+    student: 'studentPage',
+    classtest: 'classtestPage',
+    midterm: 'midtermPage',
+    semester: 'semesterPage',
+    notice: 'noticePage'
+  };
+
+  // function to show active page and update active nav
+  function showPage(pageId) {
+    // hide all sections
+    Object.values(sections).forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.classList.add('d-none');
+    });
+    const activeDiv = document.getElementById(pageId);
+    if (activeDiv) activeDiv.classList.remove('d-none');
+
+    // update active class on navbar links
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+      const linkPage = link.getAttribute('data-page');
+      if (linkPage && sections[linkPage] === pageId) {
+        link.classList.add('active');
+      }
+    });
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // attach click event to all nav-links (including those inside hero)
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pageKey = link.getAttribute('data-page');
+      if (pageKey && sections[pageKey]) {
+        showPage(sections[pageKey]);
+      }
+    });
+  });
+  // also handle any "nav-link-trigger" class for buttons inside home
+  document.querySelectorAll('.nav-link-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const pageKey = btn.getAttribute('data-page');
+      if (pageKey && sections[pageKey]) {
+        showPage(sections[pageKey]);
+      }
+    });
+  });
+
+  // show home by default
+  showPage('homePage');
+
+  // ========== SIMPLE CALENDAR DISPLAY ON HOME PAGE ==========
+  function generateMiniCalendar() {
+    const container = document.getElementById('inlineCalendar');
+    if (!container) return;
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth();
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    let calendarHtml = `<div class="fw-semibold mb-2">${monthNames[month]} ${year}</div>`;
+    calendarHtml += `<div class="d-flex justify-content-around small text-secondary mb-1"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div><div class="d-flex flex-wrap justify-content-around">`;
+
+    let dayCounter = 1;
+    for (let i = 0; i < 42; i++) {
+      if (i < firstDay || dayCounter > daysInMonth) {
+        calendarHtml += `<span class="text-muted opacity-50" style="width:36px; text-align:center;">-</span>`;
+      } else {
+        const isCurrent = (dayCounter === today.getDate());
+        calendarHtml += `<span class="fw-semibold ${isCurrent ? 'bg-warning rounded-circle text-dark' : ''}" style="width:36px; text-align:center; display:inline-block;">${dayCounter}</span>`;
+        dayCounter++;
+      }
+    }
+    calendarHtml += `</div>`;
+    container.innerHTML = calendarHtml;
+  }
+  generateMiniCalendar();
+
+  // =================================================================
+  // MANUAL LINK UPDATE: Just replace the href="#" below with your real PDF/Drive links.
+  // Examples: 
+  // document.getElementById('ctLink1').href = "https://drive.google.com/file/d/YOUR_ID/view";
+  // document.getElementById('midLink1').href = "https://drive.google.com/file/d/YOUR_MID_LINK";
+  // You can change all links directly in the HTML anchor tags or here.
+  // =================================================================
+  // (No extra files used; you can edit the href attributes directly in the HTML above)
+  // For convenience, here's a quick guide to set default demo link if you want:
+  // Uncomment and replace with your actual links:
+  /*
+  document.getElementById('ctLink1').href = "https://drive.google.com/your-class-test-1.pdf";
+  document.getElementById('ctLink2').href = "https://drive.google.com/your-class-test-2.pdf";
+  document.getElementById('ctLink3').href = "https://drive.google.com/your-class-test-3.pdf";
+  document.getElementById('midLink1').href = "https://drive.google.com/your-mid-1.pdf";
+  document.getElementById('midLink2').href = "https://drive.google.com/your-mid-2.pdf";
+  document.getElementById('midLink3').href = "https://drive.google.com/your-mid-3.pdf";
+  document.getElementById('semLink1').href = "https://drive.google.com/your-sem-1.pdf";
+  document.getElementById('semLink2').href = "https://drive.google.com/your-sem-2.pdf";
+  document.getElementById('semLink3').href = "https://drive.google.com/your-sem-3.pdf";
+  */
+</script>
+</body>
+</html>
