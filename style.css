@@ -1,0 +1,140 @@
+    /* extra subtle styling for consistency */
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafc;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      letter-spacing: -0.3px;
+    }
+
+    .navbar-brand span {
+      color: #f5b042;
+    }
+
+    .btn-custom {
+      background: #1e5a6f;
+      color: white;
+      border-radius: 40px;
+      padding: 8px 22px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-custom:hover {
+      background: #134652;
+      color: white;
+    }
+
+    .hero-icon {
+      font-size: 4rem;
+      color: #1e5a6f;
+      opacity: 0.85;
+    }
+
+    .card-hover {
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+    }
+
+    .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .result-link-card {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .result-link-card .card {
+      transition: 0.2s;
+    }
+
+    .result-link-card:hover .card {
+      background: #fef9e6;
+      border-left: 4px solid #f5b042;
+    }
+
+    .notice-item {
+      background: white;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+      border-left: 5px solid #f5b042;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: 0.1s;
+    }
+
+    .footer-info {
+      background: #0f2c34;
+      color: #e9ecef;
+      border-top: 3px solid #f5b042;
+    }
+
+    .footer-teacher p {
+      font-size: 0.95rem;
+    }
+
+    .curriculum-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .curriculum-list li {
+      padding: 0.65rem 0;
+      border-bottom: 1px dashed #dee2e6;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .curriculum-list li i {
+      color: #f5b042;
+      width: 24px;
+      margin-top: 4px;
+    }
+
+    .software-tag {
+      background: #eef2f5;
+      padding: 12px 18px;
+      border-radius: 40px;
+      transition: 0.2s;
+      text-align: center;
+    }
+
+    .software-tag i {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
+      display: block;
+      color: #1e5a6f;
+    }
+
+    /* Teacher Card specific styling */
+    .teacher-card-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #f5b042;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .teacher-card-img:hover {
+      transform: scale(1.02);
+    }
+
+    .calendar-mini {
+      background: #ffffffdd;
+      backdrop-filter: blur(2px);
+    }
+
+    .badge-teacher {
+      background: #1e5a6f10;
+      color: #1e5a6f;
+      font-weight: 500;
+    }
